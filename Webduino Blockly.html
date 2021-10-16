@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="zh-hant" dir="ltr" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button[not:disabled]:hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel[not:disabled]:hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger[not:disabled]:hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+  
+  <meta name="google" content="notranslate">
+  <title> Webduino Blockly</title>
+  <meta name="viewport" content="width=720, initial-scale=1, user-scalable=no">
+  <meta itemprop="name" content="Webduino Blockly Bit 體驗版">
+  <meta itemprop="image" content="//blockly.webduino.io/media/snapshot.jpg">
+  <meta itemprop="description" content="Webduino Blockly Bit 體驗版，提供簡單便利的編輯模式，同時具備了完整豐富的線上影音教學，在程式積木拖拉之餘，還可以產生標準的 Javascript 進行後續的應用開發，大幅降低學習門檻，輕鬆玩轉 Arduino 以及相關物聯網的應用。">
+  <meta property="og:title" content="Webduino Blockly Bit 體驗版">
+  <meta property="og:url" content="//bit.webduino.io/blockly/">
+  <meta property="og:image" content="//blockly.webduino.io/media/snapshot.jpg">
+  <meta property="og:description" content="Webduino Blockly 線上編輯工具，提供簡單便利的編輯模式，同時具備了完整豐富的線上影音教學，在程式積木拖拉之餘，還可以產生標準的 Javascript 進行後續的應用開發，大幅降低學習門檻，輕鬆玩轉 Arduino 以及相關物聯網的應用。">
+  <link rel="icon" href="https://bit.webduino.io/blockly/webduino.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./Webduino Blockly_files/iconfont.css">
+  <link rel="stylesheet" href="./Webduino Blockly_files/style.css">
+  <link rel="stylesheet" href="./Webduino Blockly_files/blockly.css">
+  <link rel="stylesheet" href="./Webduino Blockly_files/dialog.css">
+  <link rel="stylesheet" href="./Webduino Blockly_files/notification.css">
+  <link rel="import" href="https://bit.webduino.io/blockly/views/index.handlebars"><link rel="import" href="https://bit.webduino.io/blockly/toolbox/index.xml"><link rel="import" href="https://bit.webduino.io/blockly/components/webduino-bit-module-button/blockly/toolbox.xml"><link rel="import" href="https://bit.webduino.io/blockly/components/webduino-bit-module-buzzer/blockly/toolbox.xml"><link rel="import" href="https://bit.webduino.io/blockly/components/webduino-bit-module-photocell/blockly/toolbox.xml"><link rel="import" href="https://bit.webduino.io/blockly/components/webduino-bit-module-led-matrix/blockly/toolbox.xml"><link rel="import" href="https://bit.webduino.io/blockly/components/webduino-bit-module-thermistor/blockly/toolbox.xml"><link rel="import" href="https://bit.webduino.io/blockly/components/webduino-bit-module-shock/blockly/toolbox.xml"><link rel="import" href="https://bit.webduino.io/blockly/components/webduino-bit-module-soil/blockly/toolbox.xml"><link rel="import" href="https://bit.webduino.io/blockly/components/webduino-bit-module-dht/blockly/toolbox.xml"><link rel="import" href="https://bit.webduino.io/blockly/components/webduino-bit-module-sound/blockly/toolbox.xml"><link rel="import" href="https://bit.webduino.io/blockly/components/webduino-bit-module-mpu9250/blockly/toolbox.xml"><link rel="import" href="https://bit.webduino.io/blockly/components/webduino-bit-module-ir-recv/blockly/toolbox.xml"><link rel="import" href="https://bit.webduino.io/blockly/components/webduino-bit-module-ir-led/blockly/toolbox.xml"><link rel="import" href="https://bit.webduino.io/blockly/components/webduino-module-mqtt/blockly/toolbox.xml"><link rel="import" href="https://bit.webduino.io/blockly/templates/default.html"><link rel="import" href="https://bit.webduino.io/blockly/templates/demo-area-01.html"><link rel="import" href="https://bit.webduino.io/blockly/templates/demo-area-02.html"><script src="./Webduino Blockly_files/463217813871245" async=""></script><script src="./Webduino Blockly_files/118377538765667" async=""></script><script async="" src="./Webduino Blockly_files/fbevents.js.下載"></script><script src="./Webduino Blockly_files/js.cookie.js.下載"></script>
+  <script src="./Webduino Blockly_files/blockly_compressed.js.下載"></script>
+  <script src="./Webduino Blockly_files/blocks_compressed.js.下載"></script>
+  <script src="./Webduino Blockly_files/javascript_compressed.js.下載"></script>
+  <script src="./Webduino Blockly_files/RTCMultiConnection.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/RTCSession.js.下載"></script>
+  <script src="./Webduino Blockly_files/webcomponents-lite.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/querystring.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/sweetalert.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/jquery.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/i18next.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/i18nextBrowserLanguageDetector.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/i18nextXHRBackend.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/jquery-i18next.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/axios.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/customBlocklyField.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/handlebars-3.0.3.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/JSONStorage.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/jquery.qrcode.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/storage.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/storage-sim.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/storage.rest.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/launcher.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/webduino-base.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/code.min.js.下載"></script><script src="./Webduino Blockly_files/zh-hant.js.下載"></script>
+<script src="./Webduino Blockly_files/zh-hant.js(1).下載"></script>
+<script src="./Webduino Blockly_files/zh-hant.js(2).下載"></script>
+<script src="./Webduino Blockly_files/zh-hant.js(3).下載"></script>
+
+  <script src="./Webduino Blockly_files/code-checkDeviceOnline.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/env.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/webduino.js.下載"></script>
+  <script src="./Webduino Blockly_files/webduino.js(1).下載"></script>
+  <script src="./Webduino Blockly_files/blockdefs-loader.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/loader-config.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/checkChromeVersion.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/tab-custom.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/notify.min.js.下載"></script>
+  <script src="./Webduino Blockly_files/boot.min.js.下載"></script>
+<style>.blocklyDraggable {}
+.blocklySvg {
+background-color: #fff;
+outline: none;
+overflow: hidden;
+}
+.blocklyWidgetDiv {
+display: none;
+position: absolute;
+z-index: 999;
+}
+.blocklyNonSelectable {
+user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+.blocklyTooltipDiv {
+background-color: #ffffc7;
+border: 1px solid #ddc;
+box-shadow: 4px 4px 20px 1px rgba(0,0,0,.15);
+color: #000;
+display: none;
+font-family: sans-serif;
+font-size: 9pt;
+opacity: 0.9;
+padding: 2px;
+position: absolute;
+z-index: 1000;
+}
+.blocklyResizeSE {
+cursor: se-resize;
+fill: #aaa;
+}
+.blocklyResizeSW {
+cursor: sw-resize;
+fill: #aaa;
+}
+.blocklyResizeLine {
+stroke: #888;
+stroke-width: 1;
+}
+.blocklyHighlightedConnectionPath {
+fill: none;
+stroke: #fc3;
+stroke-width: 4px;
+}
+.blocklyPathLight {
+fill: none;
+stroke-linecap: round;
+stroke-width: 1;
+}
+.blocklySelected>.blocklyPath {
+stroke: #fc3;
+stroke-width: 3px;
+}
+.blocklySelected>.blocklyPathLight {
+display: none;
+}
+.blocklyDragging>.blocklyPath,
+.blocklyDragging>.blocklyPathLight {
+fill-opacity: .8;
+stroke-opacity: .8;
+}
+.blocklyDragging>.blocklyPathDark {
+display: none;
+}
+.blocklyDisabled>.blocklyPath {
+fill-opacity: .5;
+stroke-opacity: .5;
+}
+.blocklyDisabled>.blocklyPathLight,
+.blocklyDisabled>.blocklyPathDark {
+display: none;
+}
+.blocklyText {
+cursor: default;
+fill: #fff;
+font-family: sans-serif;
+font-size: 11pt;
+}
+.blocklyNonEditableText>text {
+pointer-events: none;
+}
+.blocklyNonEditableText>rect,
+.blocklyEditableText>rect {
+fill: #fff;
+fill-opacity: .6;
+}
+.blocklyNonEditableText>text,
+.blocklyEditableText>text {
+fill: #000;
+}
+.blocklyEditableText:hover>rect {
+stroke: #fff;
+stroke-width: 2;
+}
+.blocklyBubbleText {
+fill: #000;
+}
+.blocklySvg text {
+user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+cursor: inherit;
+}
+.blocklyHidden {
+display: none;
+}
+.blocklyFieldDropdown:not(.blocklyHidden) {
+display: block;
+}
+.blocklyIconGroup {
+cursor: default;
+}
+.blocklyIconGroup:not(:hover),
+.blocklyIconGroupReadonly {
+opacity: .6;
+}
+.blocklyIconShape {
+fill: #00f;
+stroke: #fff;
+stroke-width: 1px;
+}
+.blocklyIconSymbol {
+fill: #fff;
+}
+.blocklyMinimalBody {
+margin: 0;
+padding: 0;
+}
+.blocklyCommentTextarea {
+background-color: #ffc;
+border: 0;
+margin: 0;
+padding: 2px;
+resize: none;
+}
+.blocklyHtmlInput {
+border: none;
+border-radius: 4px;
+font-family: sans-serif;
+height: 100%;
+margin: 0;
+outline: none;
+padding: 0 1px;
+width: 100%
+}
+.blocklyMainBackground {
+stroke-width: 1;
+stroke: #c6c6c6;
+}
+.blocklyMutatorBackground {
+fill: #fff;
+stroke: #ddd;
+stroke-width: 1;
+}
+.blocklyFlyoutBackground {
+fill: #ddd;
+fill-opacity: .8;
+}
+.blocklyScrollbarBackground {
+opacity: 0;
+}
+.blocklyScrollbarKnob {
+fill: #ccc;
+}
+.blocklyScrollbarBackground:hover+.blocklyScrollbarKnob,
+.blocklyScrollbarKnob:hover {
+fill: #bbb;
+}
+.blocklyZoom>image {
+opacity: .4;
+}
+.blocklyZoom>image:hover {
+opacity: .6;
+}
+.blocklyZoom>image:active {
+opacity: .8;
+}
+.blocklyFlyout .blocklyScrollbarKnob {
+fill: #bbb;
+}
+.blocklyFlyout .blocklyScrollbarBackground:hover+.blocklyScrollbarKnob,
+.blocklyFlyout .blocklyScrollbarKnob:hover {
+fill: #aaa;
+}
+.blocklyInvalidInput {
+background: #faa;
+}
+.blocklyAngleCircle {
+stroke: #444;
+stroke-width: 1;
+fill: #ddd;
+fill-opacity: .8;
+}
+.blocklyAngleMarks {
+stroke: #444;
+stroke-width: 1;
+}
+.blocklyAngleGauge {
+fill: #f88;
+fill-opacity: .8;
+}
+.blocklyAngleLine {
+stroke: #f00;
+stroke-width: 2;
+stroke-linecap: round;
+}
+.blocklyContextMenu {
+border-radius: 4px;
+}
+.blocklyDropdownMenu {
+padding: 0 !important;
+}
+.blocklyWidgetDiv .goog-option-selected .goog-menuitem-checkbox,
+.blocklyWidgetDiv .goog-option-selected .goog-menuitem-icon {
+background: url(./components/blockly-src/media/sprites.png) no-repeat -48px -16px !important;
+}
+.blocklyToolboxDiv {
+background-color: #ddd;
+overflow-x: visible;
+overflow-y: auto;
+position: absolute;
+}
+.blocklyTreeRoot {
+padding: 4px 0;
+}
+.blocklyTreeRoot:focus {
+outline: none;
+}
+.blocklyTreeRow {
+height: 22px;
+line-height: 22px;
+margin-bottom: 3px;
+padding-right: 8px;
+white-space: nowrap;
+}
+.blocklyToolboxDiv[dir="RTL"] .blocklyTreeRow {
+margin-left: 8px;
+}
+.blocklyTreeRow:not(.blocklyTreeSelected):hover {
+background-color: #e4e4e4;
+}
+.blocklyTreeSeparator {
+border-bottom: solid #e5e5e5 1px;
+height: 0px;
+margin: 5px 0;
+}
+.blocklyTreeIcon {
+background-image: url(./components/blockly-src/media/sprites.png);
+height: 16px;
+vertical-align: middle;
+width: 16px;
+}
+.blocklyTreeIconClosedLtr {
+background-position: -32px -1px;
+}
+.blocklyTreeIconClosedRtl {
+background-position: 0px -1px;
+}
+.blocklyTreeIconOpen {
+background-position: -16px -1px;
+}
+.blocklyTreeSelected>.blocklyTreeIconClosedLtr {
+background-position: -32px -17px;
+}
+.blocklyTreeSelected>.blocklyTreeIconClosedRtl {
+background-position: 0px -17px;
+}
+.blocklyTreeSelected>.blocklyTreeIconOpen {
+background-position: -16px -17px;
+}
+.blocklyTreeIconNone,
+.blocklyTreeSelected>.blocklyTreeIconNone {
+background-position: -48px -1px;
+}
+.blocklyTreeLabel {
+cursor: default;
+font-family: sans-serif;
+font-size: 16px;
+padding: 0 3px;
+vertical-align: middle;
+}
+.blocklyTreeSelected .blocklyTreeLabel {
+color: #fff;
+}
+.blocklyWidgetDiv .goog-palette {
+outline: none;
+cursor: default;
+}
+.blocklyWidgetDiv .goog-palette-table {
+border: 1px solid #666;
+border-collapse: collapse;
+}
+.blocklyWidgetDiv .goog-palette-cell {
+height: 13px;
+width: 15px;
+margin: 0;
+border: 0;
+text-align: center;
+vertical-align: middle;
+border-right: 1px solid #666;
+font-size: 1px;
+}
+.blocklyWidgetDiv .goog-palette-colorswatch {
+position: relative;
+height: 13px;
+width: 15px;
+border: 1px solid #666;
+}
+.blocklyWidgetDiv .goog-palette-cell-hover .goog-palette-colorswatch {
+border: 1px solid #FFF;
+}
+.blocklyWidgetDiv .goog-palette-cell-selected .goog-palette-colorswatch {
+border: 1px solid #000;
+color: #fff;
+}
+.blocklyWidgetDiv .goog-menu {
+background: #fff;
+border-color: #ccc #666 #666 #ccc;
+border-style: solid;
+border-width: 1px;
+cursor: default;
+font: normal 13px Arial, sans-serif;
+margin: 0;
+outline: none;
+padding: 4px 0;
+position: absolute;
+overflow-y: auto;
+overflow-x: hidden;
+max-height: 100%;
+z-index: 20000;
+}
+.blocklyWidgetDiv .goog-menuitem {
+color: #000;
+font: normal 13px Arial, sans-serif;
+list-style: none;
+margin: 0;
+padding: 4px 7em 4px 28px;
+white-space: nowrap;
+}
+.blocklyWidgetDiv .goog-menuitem.goog-menuitem-rtl {
+padding-left: 7em;
+padding-right: 28px;
+}
+.blocklyWidgetDiv .goog-menu-nocheckbox .goog-menuitem,
+.blocklyWidgetDiv .goog-menu-noicon .goog-menuitem {
+padding-left: 12px;
+}
+.blocklyWidgetDiv .goog-menu-noaccel .goog-menuitem {
+padding-right: 20px;
+}
+.blocklyWidgetDiv .goog-menuitem-content {
+color: #000;
+font: normal 13px Arial, sans-serif;
+}
+.blocklyWidgetDiv .goog-menuitem-disabled .goog-menuitem-accel,
+.blocklyWidgetDiv .goog-menuitem-disabled .goog-menuitem-content {
+color: #ccc !important;
+}
+.blocklyWidgetDiv .goog-menuitem-disabled .goog-menuitem-icon {
+opacity: 0.3;
+-moz-opacity: 0.3;
+filter: alpha(opacity=30);
+}
+.blocklyWidgetDiv .goog-menuitem-highlight,
+.blocklyWidgetDiv .goog-menuitem-hover {
+background-color: #d6e9f8;
+border-color: #d6e9f8;
+border-style: dotted;
+border-width: 1px 0;
+padding-bottom: 3px;
+padding-top: 3px;
+}
+.blocklyWidgetDiv .goog-menuitem-checkbox,
+.blocklyWidgetDiv .goog-menuitem-icon {
+background-repeat: no-repeat;
+height: 16px;
+left: 6px;
+position: absolute;
+right: auto;
+vertical-align: middle;
+width: 16px;
+}
+.blocklyWidgetDiv .goog-menuitem-rtl .goog-menuitem-checkbox,
+.blocklyWidgetDiv .goog-menuitem-rtl .goog-menuitem-icon {
+left: auto;
+right: 6px;
+}
+.blocklyWidgetDiv .goog-option-selected .goog-menuitem-checkbox,
+.blocklyWidgetDiv .goog-option-selected .goog-menuitem-icon {
+background: url(//ssl.gstatic.com/editor/editortoolbar.png) no-repeat -512px 0;
+}
+.blocklyWidgetDiv .goog-menuitem-accel {
+color: #999;
+direction: ltr;
+left: auto;
+padding: 0 6px;
+position: absolute;
+right: 0;
+text-align: right;
+}
+.blocklyWidgetDiv .goog-menuitem-rtl .goog-menuitem-accel {
+left: 0;
+right: auto;
+text-align: left;
+}
+.blocklyWidgetDiv .goog-menuitem-mnemonic-hint {
+text-decoration: underline;
+}
+.blocklyWidgetDiv .goog-menuitem-mnemonic-separator {
+color: #999;
+font-size: 12px;
+padding-left: 4px;
+}
+.blocklyWidgetDiv .goog-menuseparator {
+border-top: 1px solid #ccc;
+margin: 4px 0;
+padding: 0;
+}
+</style><link rel="stylesheet" href="./Webduino Blockly_files/prettify-tomorrow.css"></head>
+
+<body><header>
+  <img class="note" src="./Webduino Blockly_files/beta.png"><img class="logo" src="./Webduino Blockly_files/logo.png" id="logo" alt="Webduino Blockly">
+  <h1 id="blocklyHeader">
+    Webduino Blockly Bit <span id="saveStatus"> ( 已儲存變更 )</span>
+  </h1>
+  <div id="userMenu">
+    <a href="https://webduino.io/" target="_blank">
+      <i class="icon-home" style="font-size:16px; bottom: -1px;"></i> <b>首頁</b>
+    </a>
+    <a href="https://tutorials.webduino.io/zh-tw/docs/basic/index.html?utm_source=cloud-blockly&amp;utm_medium=userMenu&amp;utm_campaign=tutorials" target="_blank">
+      <i class="icon-book"></i> <b>教學</b>
+    </a>
+    <span><i class="icon-earth"></i> <select id="languageMenu"><option value="en">English</option><option value="zh-hant">正體中文</option><option value="zh-hans">簡體中文</option></select></span>
+  </div>
+</header>
+<div id="notification" class="" style="">
+  <div class="box">
+    <img src="./Webduino Blockly_files/notification-01.png">
+    <h4>Webduino Bit 更新訊息</h4>
+    <div class="record"><h5>2019/4/12</h5><i> (更新) 優化閃電符號，檢查裝置狀態</i><h5>2019/2/19</h5><i> (更新) 熱敏電阻積木，修正溫度數值計算問題</i><h5>2018/9/21</h5><i> (新增) 紅外線模組</i><i> (新增) LED 積木</i><i> (新增) 三色 LED 積木</i><i> (新增) 繼電器積木</i><i> (更新) mpu9250 積木</i><h5>2018/8/8</h5><i> (注意) 由於積木效能調整，請將 Webduino Bit 使用 OTA 更新為最新版本韌體。 (請參考：<a href="https://bit.webduino.io/site/zh_tw/docs/setting.html" target="_blank">OTA 教學</a>)</i><i> (改版) Bit Blockly Beta 版啟用，Trial 體驗版的分享連結改為七天有效時間，超過期間不儲存，永久儲存功能請使用 Beta 版。</i><i> (改版) Bit Blockly Beta 版支援自訂積木功能，Trial 體驗版不支援，若要使用自訂積木請使用 Beta 版本。</i><i> (升級) 全彩點矩陣積木效能優化調整。</i></div>
+    <div class="note-menu">
+      <button id="note-close-btn">關閉提示</button>
+      <span id="note-check"><i class="icon-checkbox-unchecked"></i><b>有更新再提醒我</b></span>
+    </div>
+  </div>
+</div>
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="https://bit.webduino.io/blockly/?demo=demo-area-02#" title="Close" class="close">X</a>
+    <div id="qrImg" class="qrcode"></div>
+    <div class="linkContainer">
+      <a href="https://bit.webduino.io/blockly/?demo=demo-area-02" id="qrLink" target="_blank">預覽畫面</a>
+    </div>
+  </div>
+</div>
+<div id="blockFilter">
+  <a class="filterBtn selected">All</a>
+</div>
+<div id="functionSelector">
+  <a id="tab_custom" data-active="false" class="taboff"><i class="icon-cog"></i></a>
+</div>
+<table class="nav" id="mainTable">
+  <tbody><tr>
+    <td>
+      <table width="100%">
+        <tbody><tr id="tabRow">
+          <td id="tab_blocks" class="tabon" style="min-width: 111px;">積木</td>
+          <td class="tabmin">&nbsp;</td>
+          <td id="tab_javascript" class="taboff">JavaScript</td>
+          <td id="copyCode" style="display:none;" data-clipboard-target="#content_javascript" data-tooltip="複製到剪貼簿" class="toolMenu">
+            <i class="icon-copy"></i>
+          </td>
+          <td class="tabmin">&nbsp;</td>
+          <td class="tabmax">
+            <a href="https://bit.webduino.io/blockly/?demo=demo-area-02#" id="qrButton" class="linkButton toolMenu">
+              <i class="icon-qrcode"></i><div>產生即時預覽 QR code</div>
+            </a>
+            <a href="https://bit.webduino.io/blockly/launcher.html" target="_blank" id="linkToBin" class="linkButton toolMenu">
+              <i class="icon-embed2"></i> <div>打開程式編輯</div>
+            </a>
+            <div id="check-device-online" class="toolMenu">
+              <input id="input-device" class="open">
+              <span id="check-btn" class="check-btn">
+                <i class="check icon-power board-online" id="check-icon"></i>
+              </span> <div>檢查裝置狀態</div>
+            </div>
+            <button id="sampleButton" class="notext toolMenu">
+              <i class="icon-box-add"></i> <div>載入範例積木</div>
+            </button>
+            <button id="demoButton" class="notext toolMenu running" style="pointer-events: none;" disabled="">
+              <i class="icon-lab"></i> <div>網頁互動區域</div>
+            </button>
+            <button id="simulatorButton" class="notext toolMenu">
+              <i class="icon-library"></i> <div>模擬器區域</div>
+            </button>
+            <button id="trashButton" class="notext toolMenu">
+              <i class="icon-bin"></i>  <div>刪除所有積木</div>
+            </button>
+            <button id="linkButton" class="notext toolMenu">
+              <i class="icon-link"></i>  <div>儲存並產生連結</div>
+            </button>
+            <button id="runButton" class="notext primary toolMenu" style="background-color: rgb(0, 170, 85); border-color: rgb(0, 170, 85);">
+              <i class="icon-stop2"></i>  <div>停止執行</div>
+            </button>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td height="99%" id="content_area"></td>
+  </tr>
+</tbody></table>
+
+<div id="content_blocks" class="content" dir="LTR" style="visibility: visible; top: 107px; left: 42px; height: 611px; width: 1398px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="blocklySvg" width="1398px" height="611px" style="display: block;"><defs><filter id="blocklyEmbossFilter05728959724107008"><fegaussianblur in="SourceAlpha" stdDeviation="1" result="blur"></fegaussianblur><fespecularlighting in="blur" surfaceScale="1" specularConstant="0.5" specularExponent="10" lighting-color="white" result="specOut"><fepointlight x="-5000" y="-10000" z="20000"></fepointlight></fespecularlighting><fecomposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"></fecomposite><fecomposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"></fecomposite></filter><pattern id="blocklyDisabledPattern05728959724107008" patternUnits="userSpaceOnUse" width="10" height="10"><rect width="10" height="10" fill="#aaa"></rect><path d="M 0 0 L 10 10 M 10 0 L 0 10" stroke="#cc0"></path></pattern><pattern id="blocklyGridPattern05728959724107008" patternUnits="userSpaceOnUse" width="25" height="25" x="154.0000000000009" y="-1.0000000000001137"><line stroke="#ccc" stroke-width="1" x1="11" y1="12.5" x2="14" y2="12.5"></line><line stroke="#ccc" stroke-width="1" x1="12.5" y1="11" x2="12.5" y2="14"></line></pattern></defs><g class="blocklyWorkspace"><rect height="100%" width="100%" class="blocklyMainBackground" style="fill: url(&quot;#blocklyGridPattern05728959724107008&quot;);"></rect><g class="blocklyTrash" transform="translate(164,557) scale(.58)" style="opacity: 0.4;"><clippath id="blocklyTrashBodyClipPath7384997408895013"><rect width="47" height="44" y="16"></rect></clippath><image width="96" height="124" y="-32" clip-path="url(#blocklyTrashBodyClipPath7384997408895013)" xlink:href="./components/blockly-src/media/sprites.png"></image><clippath id="blocklyTrashLidClipPath7384997408895013"><rect width="47" height="16"></rect></clippath><image width="96" height="124" y="-32" clip-path="url(#blocklyTrashLidClipPath7384997408895013)" xlink:href="./components/blockly-src/media/sprites.png" transform="rotate(0,43,14)"></image></g><g class="blocklyBlockCanvas" transform="translate(154.0000000000009,-1.0000000000001137) scale(1)"><g class="blocklyDraggable" transform="translate(62.99999999999977,113)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#7a4984" d="m 0,8 A 8,8 0 0,1 8,0 H 50 H 701.9642181396484 v 36 H 50 l -6,4 -3,0 -6,-4 h -7 a 8,8 0 0,0 -8,8 v 193 a 8,8 0 0,0 8,8 H 50 v 10 H 8 a 8,8 0 0,1 -8,-8 z
+M 382.45811462402344,5 h -212.6499481201172 v 5 c 0,10 -8,-8 -8,7.5 s 8,-2.5 8,7.5 v 7 h 212.6499481201172 z"></path><path class="blocklyPath" fill="#995ba5" d="m 0,8 A 8,8 0 0,1 8,0 H 50 H 701.9642181396484 v 36 H 50 l -6,4 -3,0 -6,-4 h -7 a 8,8 0 0,0 -8,8 v 193 a 8,8 0 0,0 8,8 H 50 v 10 H 8 a 8,8 0 0,1 -8,-8 z
+M 382.45811462402344,5 h -212.6499481201172 v 5 c 0,10 -8,-8 -8,7.5 s 8,-2.5 8,7.5 v 7 h 212.6499481201172 z"></path><path class="blocklyPathLight" stroke="#b88cc0" d="m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 49.5 M 49.5,0.5 H 701.4642181396484 M 49.5,36.5 M 21.989592359914347,243.01040764008565 a 8.5,8.5 0 0,0 6.0104076400856545,2.4895923599143455 H 49.5 M 2.6966991411008934,252.3033008588991 A 7.5,7.5 0 0,1 0.5,247 V 8
+M 382.95811462402344,5.5 v 27 h -212.6499481201172 M 164.70816650390626,24.3 l 3.68,-2.1"></path><text class="blocklyText" y="12.5" transform="translate(10,10)">使用</text><g class="blocklyEditableText" transform="translate(49.319976806640625,10)" style="cursor: default;"><rect rx="4" ry="4" x="-5" y="0" height="16" width="60.50822448730469"></rect><text class="blocklyText" y="12.5">Wi-Fi<tspan style="fill: rgb(153, 91, 165);"> ▾</tspan></text></g><text class="blocklyText" y="12.5" transform="translate(109.82820129394531,10)">連線至</text><text class="blocklyText" y="12.5" transform="translate(392.45811462402344,10)">&nbsp;&nbsp;類比取樣</text><g class="blocklyEditableText" transform="translate(469.2440948486328,10)" style="cursor: default;"><rect rx="4" ry="4" x="-5" y="0" height="16" width="50.780242919921875"></rect><text class="blocklyText" y="12.5">250<tspan style="fill: rgb(153, 91, 165);"> ▾</tspan></text></g><text class="blocklyText" y="12.5" transform="translate(520.0243377685547,10)">ms</text><text class="blocklyText" y="12.5" transform="translate(549.5662078857422,10)">&nbsp;&nbsp;串聯</text><g class="blocklyEditableText" transform="translate(597.0322113037109,10)" style="cursor: default;"><rect rx="4" ry="4" x="-5" y="0" height="16" width="14.073013305664062"></rect><text class="blocklyText" y="12.5">&nbsp;</text><text class="blocklyText blocklyCheckbox" x="-3" y="14" style="display: none;">✓</text></g><text class="blocklyText" y="12.5" transform="translate(611.105224609375,10)">&nbsp;&nbsp;協同控制</text><g class="blocklyEditableText" transform="translate(687.8912048339844,10)" style="cursor: default;"><rect rx="4" ry="4" x="-5" y="0" height="16" width="14.073013305664062"></rect><text class="blocklyText" y="12.5">&nbsp;</text><text class="blocklyText blocklyCheckbox" x="-3" y="14" style="display: none;">✓</text></g><g class="blocklyDraggable" transform="translate(21,37)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#844966" d="m 0,8 A 8,8 0 0,1 8,0 H 15 l 6,4 3,0 6,-4 H 148.20758056640625 v 5 c 0,10 -8,-8 -8,7.5 s 8,-2.5 8,7.5 v 5 H 29.5 l -6,4 -3,0 -6,-4 H 0 z
+"></path><path class="blocklyPath" fill="#a55b80" d="m 0,8 A 8,8 0 0,1 8,0 H 15 l 6,4 3,0 6,-4 H 148.20758056640625 v 5 c 0,10 -8,-8 -8,7.5 s 8,-2.5 8,7.5 v 5 H 29.5 l -6,4 -3,0 -6,-4 H 0 z
+"></path><path class="blocklyPathLight" stroke="#c08ca6" d="m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 15 l 6,4 3,0 6,-4 H 147.70758056640625 M 147.70758056640625,0.5 M 143.20758056640625,19.3 l 3.68,-2.1 M 0.5,24.5 V 8
+"></path><g class="blocklyDraggable" transform="translate(149.20758056640625,0)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#495284" d="m 0,0 H 93.29994201660156 v 24 H 0 V 20 c 0,-10 -8,8 -8,-7.5 s 8,2.5 8,-7.5 z
+"></path><path class="blocklyPath" fill="#5b67a5" d="m 0,0 H 93.29994201660156 v 24 H 0 V 20 c 0,-10 -8,8 -8,-7.5 s 8,2.5 8,-7.5 z
+"></path><path class="blocklyPathLight" stroke="#8c95c0" d="m 0.5,0.5 H 92.79994201660156 M 92.79994201660156,0.5 M 0.5,23.5 V 18.5 m -7.36,-0.5 q -1.52,-5.5 0,-11 m 7.36,1 V 0.5 H 1
+"></path><text class="blocklyText" y="12.5" transform="translate(10,5)">全彩點距陣</text></g><text class="blocklyText" y="12.5" transform="translate(10,5)">設定</text><g class="blocklyEditableText" transform="translate(49.319976806640625,5)" style="cursor: default;"><rect rx="4" ry="4" x="-5" y="0" height="16" width="66.22761535644531"></rect><text class="blocklyText" y="12.5">matrix<tspan style="fill: rgb(165, 91, 128);"> ▾</tspan></text></g><text class="blocklyText" y="12.5" transform="translate(115.54759216308594,5)">為</text><g class="blocklyDraggable" transform="translate(0,26)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#498449" d="m 0,0 H 15 l 6,4 3,0 6,-4 H 152.6199188232422 v 10 H 152.6199188232422 l -6,4 -3,0 -6,-4 h -7 a 8,8 0 0,0 -8,8 v 142 a 8,8 0 0,0 8,8 H 152.6199188232422 v 10 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPath" fill="#5ba55b" d="m 0,0 H 15 l 6,4 3,0 6,-4 H 152.6199188232422 v 10 H 152.6199188232422 l -6,4 -3,0 -6,-4 h -7 a 8,8 0 0,0 -8,8 v 142 a 8,8 0 0,0 8,8 H 152.6199188232422 v 10 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPathLight" stroke="#8cc08c" d="m 0.5,0.5 H 15 l 6,4 3,0 6,-4 H 152.1199188232422 M 152.1199188232422,0.5 M 124.60951118315653,166.01040764008565 a 8.5,8.5 0 0,0 6.0104076400856545,2.4895923599143455 H 152.1199188232422 M 2.6966991411008934,175.3033008588991 A 7.5,7.5 0 0,1 0.5,170 V 0.5
+"></path><text class="blocklyText" y="12.5" transform="translate(10,15)">點擊燈泡，執行</text><g class="blocklyDraggable" transform="translate(123.61991882324219,11)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#7a8449" d="m 0,8 A 8,8 0 0,1 8,0 H 15 l 6,4 3,0 6,-4 H 107.95993041992188 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 0 z
+"></path><path class="blocklyPath" fill="#99a55b" d="m 0,8 A 8,8 0 0,1 8,0 H 15 l 6,4 3,0 6,-4 H 107.95993041992188 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 0 z
+"></path><path class="blocklyPathLight" stroke="#b8c08c" d="m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 15 l 6,4 3,0 6,-4 H 107.45993041992188 M 107.45993041992188,0.5 M 0.5,23.5 V 8
+"></path><text class="blocklyText" y="12.5" transform="translate(10,5)">燈泡狀態切換</text><g class="blocklyDraggable" transform="translate(0,25)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#496684" d="m 0,0 H 15 l 6,4 3,0 6,-4 H 84.31997680664062 v 5 c 0,10 -8,-8 -8,7.5 s 8,-2.5 8,7.5 v 5 H 79.31997680664062 l -6,4 -3,0 -6,-4 h -7 a 8,8 0 0,0 -8,8 v 13 a 8,8 0 0,0 8,8 H 84.31997680664062 v 10 H 29.5 l -6,4 -3,0 -6,-4 H 0 z
+"></path><path class="blocklyPath" fill="#5b80a5" d="m 0,0 H 15 l 6,4 3,0 6,-4 H 84.31997680664062 v 5 c 0,10 -8,-8 -8,7.5 s 8,-2.5 8,7.5 v 5 H 79.31997680664062 l -6,4 -3,0 -6,-4 h -7 a 8,8 0 0,0 -8,8 v 13 a 8,8 0 0,0 8,8 H 84.31997680664062 v 10 H 29.5 l -6,4 -3,0 -6,-4 H 0 z
+"></path><path class="blocklyPathLight" stroke="#8ca6c0" d="m 0.5,0.5 H 15 l 6,4 3,0 6,-4 H 83.81997680664062 M 83.81997680664062,0.5 M 79.31997680664062,19.3 l 3.68,-2.1 M 83.81997680664062,25.5 M 51.30956916655497,52.01040764008565 a 8.5,8.5 0 0,0 6.0104076400856545,2.4895923599143455 H 83.81997680664062 M 0.5,63.5 V 0.5
+"></path><g class="blocklyIconGroup" display="block" transform="translate(10,5)"><rect class="blocklyIconShape" rx="4" ry="4" height="16" width="16"></rect><path class="blocklyIconSymbol" d="m4.203,7.296 0,1.368 -0.92,0.677 -0.11,0.41 0.9,1.559 0.41,0.11 1.043,-0.457 1.187,0.683 0.127,1.134 0.3,0.3 1.8,0 0.3,-0.299 0.127,-1.138 1.185,-0.682 1.046,0.458 0.409,-0.11 0.9,-1.559 -0.11,-0.41 -0.92,-0.677 0,-1.366 0.92,-0.677 0.11,-0.41 -0.9,-1.559 -0.409,-0.109 -1.046,0.458 -1.185,-0.682 -0.127,-1.138 -0.3,-0.299 -1.8,0 -0.3,0.3 -0.126,1.135 -1.187,0.682 -1.043,-0.457 -0.41,0.11 -0.899,1.559 0.108,0.409z"></path><circle class="blocklyIconShape" r="2.7" cx="8" cy="8"></circle></g><text class="blocklyText" y="12.5" transform="translate(37,5)">如果</text><text class="blocklyText" y="12.5" transform="translate(10,30)">執行</text><g class="blocklyDraggable" transform="translate(85.31997680664062,0)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#7a8449" d="m 0,0 H 179.90696716308594 v 25 H 0 V 20 c 0,-10 -8,8 -8,-7.5 s 8,2.5 8,-7.5 z
+"></path><path class="blocklyPath" fill="#99a55b" d="m 0,0 H 179.90696716308594 v 25 H 0 V 20 c 0,-10 -8,8 -8,-7.5 s 8,2.5 8,-7.5 z
+"></path><path class="blocklyPathLight" stroke="#b8c08c" d="m 0.5,0.5 H 179.40696716308594 M 179.40696716308594,0.5 M 0.5,24.5 V 18.5 m -7.36,-0.5 q -1.52,-5.5 0,-11 m 7.36,1 V 0.5 H 1
+"></path><text class="blocklyText" y="12.5" transform="translate(10,5)">燈泡現在的狀態是</text><g class="blocklyEditableText" transform="translate(137.2799072265625,5)" style="cursor: default;"><rect rx="4" ry="4" x="-5" y="0" height="16" width="42.62705993652344"></rect><text class="blocklyText" y="12.5">on<tspan style="fill: rgb(153, 165, 91);"> ▾</tspan></text></g></g><g class="blocklyDraggable" transform="translate(0,65)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#496684" d="m 0,0 H 15 l 6,4 3,0 6,-4 H 84.31997680664062 v 5 c 0,10 -8,-8 -8,7.5 s 8,-2.5 8,7.5 v 5 H 79.31997680664062 l -6,4 -3,0 -6,-4 h -7 a 8,8 0 0,0 -8,8 v 13 a 8,8 0 0,0 8,8 H 84.31997680664062 v 10 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPath" fill="#5b80a5" d="m 0,0 H 15 l 6,4 3,0 6,-4 H 84.31997680664062 v 5 c 0,10 -8,-8 -8,7.5 s 8,-2.5 8,7.5 v 5 H 79.31997680664062 l -6,4 -3,0 -6,-4 h -7 a 8,8 0 0,0 -8,8 v 13 a 8,8 0 0,0 8,8 H 84.31997680664062 v 10 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPathLight" stroke="#8ca6c0" d="m 0.5,0.5 H 15 l 6,4 3,0 6,-4 H 83.81997680664062 M 83.81997680664062,0.5 M 79.31997680664062,19.3 l 3.68,-2.1 M 83.81997680664062,25.5 M 51.30956916655497,52.01040764008565 a 8.5,8.5 0 0,0 6.0104076400856545,2.4895923599143455 H 83.81997680664062 M 2.6966991411008934,61.30330085889911 A 7.5,7.5 0 0,1 0.5,56 V 0.5
+"></path><g class="blocklyIconGroup" display="block" transform="translate(10,5)"><rect class="blocklyIconShape" rx="4" ry="4" height="16" width="16"></rect><path class="blocklyIconSymbol" d="m4.203,7.296 0,1.368 -0.92,0.677 -0.11,0.41 0.9,1.559 0.41,0.11 1.043,-0.457 1.187,0.683 0.127,1.134 0.3,0.3 1.8,0 0.3,-0.299 0.127,-1.138 1.185,-0.682 1.046,0.458 0.409,-0.11 0.9,-1.559 -0.11,-0.41 -0.92,-0.677 0,-1.366 0.92,-0.677 0.11,-0.41 -0.9,-1.559 -0.409,-0.109 -1.046,0.458 -1.185,-0.682 -0.127,-1.138 -0.3,-0.299 -1.8,0 -0.3,0.3 -0.126,1.135 -1.187,0.682 -1.043,-0.457 -0.41,0.11 -0.899,1.559 0.108,0.409z"></path><circle class="blocklyIconShape" r="2.7" cx="8" cy="8"></circle></g><g class="blocklyDraggable" transform="translate(50.319976806640625,26)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#7f8449" d="m 0,8 A 8,8 0 0,1 8,0 H 15 l 6,4 3,0 6,-4 H 177.52755737304688 v 5 c 0,10 -8,-8 -8,7.5 s 8,-2.5 8,7.5 v 5 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPath" fill="#9fa55b" d="m 0,8 A 8,8 0 0,1 8,0 H 15 l 6,4 3,0 6,-4 H 177.52755737304688 v 5 c 0,10 -8,-8 -8,7.5 s 8,-2.5 8,7.5 v 5 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPathLight" stroke="#bcc08c" d="m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 15 l 6,4 3,0 6,-4 H 177.02755737304688 M 177.02755737304688,0.5 M 172.52755737304688,19.3 l 3.68,-2.1 M 2.6966991411008934,22.303300858899107 A 7.5,7.5 0 0,1 0.5,17 V 8
+"></path><text class="blocklyText" y="12.5" transform="translate(10,5)">設定</text><g class="blocklyEditableText" transform="translate(49.319976806640625,5)" style="cursor: default;"><rect rx="4" ry="4" x="-5" y="0" height="16" width="66.22761535644531"></rect><text class="blocklyText" y="12.5">matrix<tspan style="fill: rgb(159, 165, 91);"> ▾</tspan></text></g><text class="blocklyText" y="12.5" transform="translate(115.54759216308594,5)">燈光為</text><g class="blocklyDraggable" transform="translate(178.52755737304688,0)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#498449" d="m 0,0 H 32.21903991699219 v 25 H 0 V 20 c 0,-10 -8,8 -8,-7.5 s 8,2.5 8,-7.5 z
+"></path><path class="blocklyPath" fill="#5ba55b" d="m 0,0 H 32.21903991699219 v 25 H 0 V 20 c 0,-10 -8,8 -8,-7.5 s 8,2.5 8,-7.5 z
+"></path><path class="blocklyPathLight" stroke="#8cc08c" d="m 0.5,0.5 H 31.719039916992188 M 31.719039916992188,0.5 M 0.5,24.5 V 18.5 m -7.36,-0.5 q -1.52,-5.5 0,-11 m 7.36,1 V 0.5 H 1
+"></path><g class="blocklyEditableText" transform="translate(10,5)" style="cursor: default;"><rect rx="4" ry="4" x="-5" y="0" height="16" style="fill-opacity: 1; fill: rgb(204, 51, 204);" width="22.219039916992188"></rect><text class="blocklyText" y="12.5">&nbsp;&nbsp;&nbsp;</text></g></g></g><text class="blocklyText" y="12.5" transform="translate(37,5)">如果</text><text class="blocklyText" y="12.5" transform="translate(10,30)">執行</text><g class="blocklyDraggable" transform="translate(85.31997680664062,0)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#7a8449" d="m 0,0 H 179.63494873046875 v 25 H 0 V 20 c 0,-10 -8,8 -8,-7.5 s 8,2.5 8,-7.5 z
+"></path><path class="blocklyPath" fill="#99a55b" d="m 0,0 H 179.63494873046875 v 25 H 0 V 20 c 0,-10 -8,8 -8,-7.5 s 8,2.5 8,-7.5 z
+"></path><path class="blocklyPathLight" stroke="#b8c08c" d="m 0.5,0.5 H 179.13494873046875 M 179.13494873046875,0.5 M 0.5,24.5 V 18.5 m -7.36,-0.5 q -1.52,-5.5 0,-11 m 7.36,1 V 0.5 H 1
+"></path><text class="blocklyText" y="12.5" transform="translate(10,5)">燈泡現在的狀態是</text><g class="blocklyEditableText" transform="translate(137.2799072265625,5)" style="cursor: default;"><rect rx="4" ry="4" x="-5" y="0" height="16" width="42.35504150390625"></rect><text class="blocklyText" y="12.5">off<tspan style="fill: rgb(153, 165, 91);"> ▾</tspan></text></g></g></g><g class="blocklyDraggable" transform="translate(50.319976806640625,26)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#7f8449" d="m 0,8 A 8,8 0 0,1 8,0 H 15 l 6,4 3,0 6,-4 H 177.52755737304688 v 5 c 0,10 -8,-8 -8,7.5 s 8,-2.5 8,7.5 v 5 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPath" fill="#9fa55b" d="m 0,8 A 8,8 0 0,1 8,0 H 15 l 6,4 3,0 6,-4 H 177.52755737304688 v 5 c 0,10 -8,-8 -8,7.5 s 8,-2.5 8,7.5 v 5 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPathLight" stroke="#bcc08c" d="m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 15 l 6,4 3,0 6,-4 H 177.02755737304688 M 177.02755737304688,0.5 M 172.52755737304688,19.3 l 3.68,-2.1 M 2.6966991411008934,22.303300858899107 A 7.5,7.5 0 0,1 0.5,17 V 8
+"></path><text class="blocklyText" y="12.5" transform="translate(10,5)">設定</text><g class="blocklyEditableText" transform="translate(49.319976806640625,5)" style="cursor: default;"><rect rx="4" ry="4" x="-5" y="0" height="16" width="66.22761535644531"></rect><text class="blocklyText" y="12.5">matrix<tspan style="fill: rgb(159, 165, 91);"> ▾</tspan></text></g><text class="blocklyText" y="12.5" transform="translate(115.54759216308594,5)">燈光為</text><g class="blocklyDraggable" transform="translate(178.52755737304688,0)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#498449" d="m 0,0 H 32.21903991699219 v 25 H 0 V 20 c 0,-10 -8,8 -8,-7.5 s 8,2.5 8,-7.5 z
+"></path><path class="blocklyPath" fill="#5ba55b" d="m 0,0 H 32.21903991699219 v 25 H 0 V 20 c 0,-10 -8,8 -8,-7.5 s 8,2.5 8,-7.5 z
+"></path><path class="blocklyPathLight" stroke="#8cc08c" d="m 0.5,0.5 H 31.719039916992188 M 31.719039916992188,0.5 M 0.5,24.5 V 18.5 m -7.36,-0.5 q -1.52,-5.5 0,-11 m 7.36,1 V 0.5 H 1
+"></path><g class="blocklyEditableText" transform="translate(10,5)" style="cursor: default;"><rect rx="4" ry="4" x="-5" y="0" height="16" style="fill-opacity: 1; fill: rgb(255, 0, 0);" width="22.219039916992188"></rect><text class="blocklyText" y="12.5">&nbsp;&nbsp;&nbsp;</text></g></g></g></g></g></g></g><g class="blocklyDraggable" transform="translate(170.80816650390625,6)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#498470" d="m 0,0 H 210.6499481201172 v 25 H 0 V 20 c 0,-10 -8,8 -8,-7.5 s 8,2.5 8,-7.5 z
+"></path><path class="blocklyPath" fill="#5ba58c" d="m 0,0 H 210.6499481201172 v 25 H 0 V 20 c 0,-10 -8,8 -8,-7.5 s 8,2.5 8,-7.5 z
+"></path><path class="blocklyPathLight" stroke="#8cc0af" d="m 0.5,0.5 H 210.1499481201172 M 210.1499481201172,0.5 M 0.5,24.5 V 18.5 m -7.36,-0.5 q -1.52,-5.5 0,-11 m 7.36,1 V 0.5 H 1
+"></path><g transform="translate(10,5)"><image height="12px" width="12px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAQAAAAqJXdxAAAAn0lEQVQI1z3OMa5BURSF4f/cQhAKjUQhuQmFNwGJEUi0RKN5rU7FHKhpjEH3TEMtkdBSCY1EIv8r7nFX9e29V7EBAOvu7RPjwmWGH/VuF8CyN9/OAdvqIXYLvtRaNjx9mMTDyo+NjAN1HNcl9ZQ5oQMM3dgDUqDo1l8DzvwmtZN7mnD+PkmLa+4mhrxVA9fRowBWmVBhFy5gYEjKMfz9AylsaRRgGzvZAAAAAElFTkSuQmCC"></image></g><g class="blocklyEditableText" transform="translate(32,5)" style="cursor: text;"><rect rx="4" ry="4" x="-5" y="0" height="16" width="156.6499481201172"></rect><text class="blocklyText" y="12.5">8NafA8TBRiwRfB4i4N</text></g><g transform="translate(188.6499481201172,5)"><image height="12px" width="12px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAQAAAAqJXdxAAAAqUlEQVQI1z3KvUpCcRiA8ef9E4JNHhI0aFEacm1o0BsI0Slx8wa8gLauoDnoBhq7DcfWhggONDmJJgqCPA7neJ7p934EOOKOnM8Q7PDElo/4x4lFb2DmuUjcUzS3URnGib9qaPNbuXvBO3sGPHJDRG6fGVdMSeWDP2q99FQdFrz26Gu5Tq7dFMzUvbXy8KXeAj57cOklgA+u1B5AoslLtGIHQMaCVnwDnADZIFIrXsoXrgAAAABJRU5ErkJggg=="></image></g></g></g></g><g class="blocklyBubbleCanvas" transform="translate(154.0000000000009,-1.0000000000001137) scale(1)"></g><rect height="15" width="15" class="blocklyScrollbarBackground" x="1382.5" y="595.5"></rect><g class="blocklyScrollbarVertical" transform="translate(1382.5,0.5)"><rect class="blocklyScrollbarBackground" width="15" height="595"></rect><rect class="blocklyScrollbarKnob" rx="5" ry="5" width="10" x="2.5" height="382.678947368421" y="146.55789473684217"></rect></g><g class="blocklyScrollbarHorizontal" transform="translate(149.5,595.5)"><rect class="blocklyScrollbarBackground" height="15" width="1233"></rect><rect class="blocklyScrollbarKnob" rx="5" ry="5" height="10" y="2.5" width="792.2043963719551" x="350.7518264160854"></rect></g><g class="blocklyZoom" transform="translate(197,486) scale(.95)"><clippath id="blocklyZoomresetClipPath5708964526894273"><rect width="32" height="32" x="40" y="80"></rect></clippath><image width="96" height="124" x="40" y="-12" clip-path="url(#blocklyZoomresetClipPath5708964526894273)" xlink:href="media/sprites.png"></image><clippath id="blocklyZoominClipPath5708964526894273"><rect width="32" height="32" x="0" y="80"></rect></clippath><image width="96" height="124" x="-32" y="-12" clip-path="url(#blocklyZoominClipPath5708964526894273)" xlink:href="media/sprites.png"></image><clippath id="blocklyZoomoutClipPath5708964526894273"><rect width="32" height="32" x="80" y="80"></rect></clippath><image width="96" height="124" x="16" y="-12" clip-path="url(#blocklyZoomoutClipPath5708964526894273)" xlink:href="media/sprites.png"></image></g></g><g class="blocklyFlyout" transform="translate(149,0)" style="display: none;"><path class="blocklyFlyoutBackground" d="M 0,0 h 206.90696716308594 a 8 8 0 0 1 8 8 v 651 a 8 8 0 0 1 -8 8 h -206.90696716308594 z"></path><g class="blocklyWorkspace"><g class="blocklyBlockCanvas" transform="translate(0,2) scale(1)"><rect fill-opacity="0" width="152.6199188232422" height="49" x="16" y="8"></rect><g class="blocklyDraggable" transform="translate(16,8)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#498449" d="m 0,8 A 8,8 0 0,1 8,0 H 15 l 6,4 3,0 6,-4 H 152.6199188232422 v 10 H 152.6199188232422 l -6,4 -3,0 -6,-4 h -7 a 8,8 0 0,0 -8,8 v 8 a 8,8 0 0,0 8,8 H 152.6199188232422 v 10 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPath" fill="#5ba55b" d="m 0,8 A 8,8 0 0,1 8,0 H 15 l 6,4 3,0 6,-4 H 152.6199188232422 v 10 H 152.6199188232422 l -6,4 -3,0 -6,-4 h -7 a 8,8 0 0,0 -8,8 v 8 a 8,8 0 0,0 8,8 H 152.6199188232422 v 10 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPathLight" stroke="#8cc08c" d="m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 15 l 6,4 3,0 6,-4 H 152.1199188232422 M 152.1199188232422,0.5 M 124.60951118315653,32.01040764008565 a 8.5,8.5 0 0,0 6.0104076400856545,2.4895923599143455 H 152.1199188232422 M 2.6966991411008934,41.30330085889911 A 7.5,7.5 0 0,1 0.5,36 V 8
+"></path><text class="blocklyText" y="12.5" transform="translate(10,15)">點擊燈泡，執行</text></g><rect fill-opacity="0" width="165.24697875976562" height="30" x="16" y="81"></rect><g class="blocklyDraggable" transform="translate(16,81)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#7a8449" d="m 0,8 A 8,8 0 0,1 8,0 H 15 l 6,4 3,0 6,-4 H 165.24697875976562 v 25 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPath" fill="#99a55b" d="m 0,8 A 8,8 0 0,1 8,0 H 15 l 6,4 3,0 6,-4 H 165.24697875976562 v 25 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPathLight" stroke="#b8c08c" d="m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 15 l 6,4 3,0 6,-4 H 164.74697875976562 M 164.74697875976562,0.5 M 2.6966991411008934,22.303300858899107 A 7.5,7.5 0 0,1 0.5,17 V 8
+"></path><text class="blocklyText" y="12.5" transform="translate(10,5)">設定燈泡狀態為</text><g class="blocklyEditableText" transform="translate(122.61991882324219,5)" style="cursor: default;"><rect rx="4" ry="4" x="-5" y="0" height="16" width="42.62705993652344"></rect><text class="blocklyText" y="12.5">on<tspan style="fill: rgb(153, 165, 91);"> ▾</tspan></text></g></g><rect fill-opacity="0" width="187.90696716308594" height="26" x="8" y="135"></rect><g class="blocklyDraggable" transform="translate(16,135)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#7a8449" d="m 0,0 H 179.90696716308594 v 25 H 0 V 20 c 0,-10 -8,8 -8,-7.5 s 8,2.5 8,-7.5 z
+"></path><path class="blocklyPath" fill="#99a55b" d="m 0,0 H 179.90696716308594 v 25 H 0 V 20 c 0,-10 -8,8 -8,-7.5 s 8,2.5 8,-7.5 z
+"></path><path class="blocklyPathLight" stroke="#b8c08c" d="m 0.5,0.5 H 179.40696716308594 M 179.40696716308594,0.5 M 0.5,24.5 V 18.5 m -7.36,-0.5 q -1.52,-5.5 0,-11 m 7.36,1 V 0.5 H 1
+"></path><text class="blocklyText" y="12.5" transform="translate(10,5)">燈泡現在的狀態是</text><g class="blocklyEditableText" transform="translate(137.2799072265625,5)" style="cursor: default;"><rect rx="4" ry="4" x="-5" y="0" height="16" width="42.62705993652344"></rect><text class="blocklyText" y="12.5">on<tspan style="fill: rgb(153, 165, 91);"> ▾</tspan></text></g></g><rect fill-opacity="0" width="107.95993041992188" height="29" x="16" y="185"></rect><g class="blocklyDraggable blocklySelected" transform="translate(16,185)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#7a8449" d="m 0,8 A 8,8 0 0,1 8,0 H 15 l 6,4 3,0 6,-4 H 107.95993041992188 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPath" fill="#99a55b" d="m 0,8 A 8,8 0 0,1 8,0 H 15 l 6,4 3,0 6,-4 H 107.95993041992188 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z
+"></path><path class="blocklyPathLight" stroke="#b8c08c" d="m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 15 l 6,4 3,0 6,-4 H 107.45993041992188 M 107.45993041992188,0.5 M 2.6966991411008934,21.303300858899107 A 7.5,7.5 0 0,1 0.5,16 V 8
+"></path><text class="blocklyText" y="12.5" transform="translate(10,5)">燈泡狀態切換</text></g></g><g class="blocklyBubbleCanvas" transform="translate(0,2) scale(1)"></g><g class="blocklyScrollbarVertical" display="none" transform="translate(199.40696716308594,2.5)"><rect class="blocklyScrollbarBackground" width="15" height="662"></rect><rect class="blocklyScrollbarKnob" rx="5" ry="5" width="10" x="2.5" height="2050.96261682243" y="0"></rect></g></g></g></svg></div>
+<pre id="content_javascript" class="content" style="visibility: hidden; top: 107px; left: 42px; height: 569px; width: 1356px;"></pre>
+<div id="content_custom" class="content" style="visibility: hidden; top: 107px; left: 42px; height: 599px; width: 1386px;">
+  <ul class="custom-tab">
+    <li class="tab-trigger active" data-tab="export">匯出及匯入</li>
+    <li class="tab-trigger" data-tab="custom">使用自有積木</li>
+  </ul>
+  <div class="custom-content">
+    <div class="tab-content" data-tab="export">
+      <div class="form-import">
+        <h2>匯入</h2>
+        <hr>
+        <p>匯入先前備份的專案</p>
+        <input id="chooseFile" type="file" onchange="document.getElementById(&#39;chooseFileName&#39;).innerHTML = this.value.split(&#39;\\&#39;)[this.value.split(&#39;\\&#39;).length-1]; document.getElementById(&#39;importFileBtn&#39;).className=&#39;btn btn-import-blocks show-import-file-button&#39;;" accept=".xml">
+        <button id="importFileBtn" class="btn-import">匯入</button>
+        <button id="chooseFileBtn" class="btn-import" onclick="document.getElementById(&#39;chooseFile&#39;).click();">選擇檔案</button>
+        <button id="importFromUrlBtn" class="btn-import" style="display:none">由連結匯入...</button>
+        <span id="chooseFileName"></span>
+      </div>
+      <div class="form-export">
+        <h2>匯出</h2>
+        <hr>
+        <p>匯出目前專案的積木，並下載備份</p>
+        <a id="btn-export-blocks" class="btn-import">匯出</a>
+      </div>
+    </div>
+    <div class="tab-content" data-tab="custom">
+      <h2>使用自有積木</h2>
+      <span class="text-custom-description">請輸入自有積木定義檔 <code>(blockly.json)</code> 連結，並注意下列事項</span>
+      <ul>
+        <li>確保連結有效，連結必須為安全連線 (HTTPS)</li>
+        <li>檢查程式碼是否無誤</li>
+        <li>rawgit.com 將停止服務，若有使用，系統會自動替換</li>
+      </ul>
+      <div class="block-def-wrapper"></div>
+      <form class="form-custom-blocks">
+        <input type="text" class="input-custom-blocks">
+        <button type="submit" class="btn btn-add-block" id="importBlocklyJSON">匯入</button>
+        <p class="info"></p>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="sample-menu" tabindex="0">
+  <div id="sample-menu-content">
+    <h3>Webduino Bit 全彩點矩陣</h3>
+    <div data-value="bit1_0">即時繪製圖案<i class="icon-plus"></i></div>
+    <div data-value="bit1_1">網頁按鈕控制燈號<i class="icon-plus"></i></div>
+    <div data-value="bit1_4">同時顯示相同顏色<i class="icon-plus"></i></div>
+    <div data-value="bit1_6">燈號移動 ( 水平 )<i class="icon-plus"></i></div>
+    <div data-value="bit1_8">燈號移動 ( 垂直 )<i class="icon-plus"></i></div>
+    <div data-value="bit1_16">燈號移動 ( 繞著周圍 )<i class="icon-plus"></i></div>
+    <div data-value="bit1_3">線段移動 ( 水平 + 色彩變換 )<i class="icon-plus"></i></div>
+    <div data-value="bit1_5">線段移動 ( 水平 + 反彈 )<i class="icon-plus"></i></div>
+    <div data-value="bit1_7">列與欄操作 ( 燈號水平反彈 )<i class="icon-plus"></i></div>
+    <div data-value="bit1_9">列與欄操作 ( 一排燈號水平反彈 )<i class="icon-plus"></i></div>
+    <div data-value="bit1_10">列與欄操作 ( 一排燈號垂直反彈 )<i class="icon-plus"></i></div>
+    <div data-value="bit1_11">列與欄操作 ( 反彈球效果 )<i class="icon-plus"></i></div>
+    <div data-value="bit1_2">鍵盤操控燈號移動<i class="icon-plus"></i></div>
+    <div data-value="bit1_12">鍵盤操控燈號移動 ( 碰撞偵測 )<i class="icon-plus"></i></div>
+    <div data-value="bit1_13">二維列表定義圖案<i class="icon-plus"></i></div>
+    <div data-value="bit1_14">二維列表定義圖案 ( 水平跑馬燈 )<i class="icon-plus"></i></div>
+    <div data-value="bit1_15">二維列表定義圖案 ( 垂直跑馬燈 )<i class="icon-plus"></i></div>
+    <h3>Webduino Bit 元件模組</h3>
+    <div data-value="bit2_1">按鈕開關 ( 網頁顯示狀態 )<i class="icon-plus"></i></div>
+    <div data-value="bit2_2">按鈕開關 ( 控制燈號 )<i class="icon-plus"></i></div>
+    <div data-value="bit2_3">蜂鳴器 ( 網頁按鈕操控 )<i class="icon-plus"></i></div>
+    <h3>Webduino Bit 傳感器</h3>
+    <div data-value="bit3_1">光敏電阻 ( 網頁顯示亮度 )<i class="icon-plus"></i></div>
+    <div data-value="bit3_2">光敏電阻 ( 改變全彩點矩陣顏色 )<i class="icon-plus"></i></div>
+    <div data-value="bit3_3">熱敏電阻 ( 網頁顯示溫度 )<i class="icon-plus"></i></div>
+    <div data-value="bit3_4">熱敏電阻 ( 改變全彩點矩陣顏色 )<i class="icon-plus"></i></div>
+    <div data-value="bit3_5">九軸偵測 ( 加速度 )<i class="icon-plus"></i></div>
+    <div data-value="bit3_6">九軸偵測 ( 陀螺儀 )<i class="icon-plus"></i></div>
+    <div data-value="bit3_7">九軸偵測 ( 姿態角度 )<i class="icon-plus"></i></div>
+    <h3>Webduino Bit 小遊戲</h3>
+    <div data-value="bit0_1">貪吃蛇 ( 按鈕開關 )<i class="icon-plus"></i></div>
+    <div data-value="bit0_2">走迷宮 ( 按鈕開關 + 鍵盤 )<i class="icon-plus"></i></div>
+    <div data-value="bit0_3">反彈球 ( 按鈕開關 )<i class="icon-plus"></i></div>
+    <div data-value="bit0_4">小瑪莉 ( 按鈕開關 )<i class="icon-plus"></i></div>
+  </div>
+</div>
+<div id="demo-area" class="show topFrame" data-height="">
+  <div class="resize-area resize-bar-left"></div>
+  <div class="resize-area resize-bar-right"></div>
+  <div class="resize-area resize-bar-bottom"></div>
+  <div class="resize-area resize-bar-top"></div>
+  <div class="resize-area resize-bar-top-left"></div>
+  <div class="resize-area resize-bar-top-right"></div>
+  <div class="resize-area resize-bar-bottom-left"></div>
+  <div class="resize-area resize-bar-bottom-right"></div>
+  <div class="demo-area-content">
+    <div class="close-btn" style="pointer-events: none; opacity: 0.2;"></div>
+    <h4>網頁互動區域</h4>
+    <span>互動方式：</span>
+    <select id="demo-select" disabled="">
+      <option value="demo-area-01">顯示文字</option>
+      <option value="demo-area-02">點擊燈泡</option>
+      <option value="demo-area-03">控制圖片</option>
+      <option value="demo-area-04">顏色調整</option>
+      <option value="demo-area-05">按鈕行為</option>
+      <option value="demo-area-06">拉霸操作</option>
+      <option value="demo-area-07">Youtube</option>
+      <option value="demo-area-08">影像追蹤</option>
+      <option value="demo-area-09">遙控器</option>
+      <option value="demo-area-10">繪製圖表</option>
+    </select>
+  <iframe id="demo-frame" style="display: block; pointer-events: auto;" src="./Webduino Blockly_files/saved_resource.html"></iframe></div>
+</div>
+<div id="simulator-area" class="">
+  <div class="resize-area resize-bar-left"></div>
+  <div class="resize-area resize-bar-right"></div>
+  <div class="resize-area resize-bar-bottom"></div>
+  <div class="resize-area resize-bar-top"></div>
+  <div class="resize-area resize-bar-top-left"></div>
+  <div class="resize-area resize-bar-top-right"></div>
+  <div class="resize-area resize-bar-bottom-left"></div>
+  <div class="resize-area resize-bar-bottom-right"></div>
+  <div class="simulator-area-content">
+    <div class="close-btn"></div>
+    <div class="icon-enlarge"></div>
+    <div class="icon-shrink"></div>
+    <iframe id="simulator-frame" src="./Webduino Blockly_files/index.html"></iframe>
+  </div>
+</div>
+<div id="content_xml" class="content"></div>
+<div class="blocklyWidgetDiv" style="direction: ltr; display: none; width: auto; height: auto;"></div><div class="blocklyTooltipDiv" style="direction: ltr; display: none; top: 264px; left: 649px;"><div>字元、 單詞或一行文字。</div></div><div class="blocklyToolboxDiv" dir="LTR" style="left: 42px; height: 611px; top: 107px; display: block;"><div class="blocklyTreeRoot" id=":0" role="tree" aria-selected="false" aria-expanded="false" aria-level="0" aria-labelledby=":0.label" hidefocus="true" tabindex="0" aria-activedescendant=":ed"><div class="blocklyTreeRow blocklyHidden" style="padding-left:0px;"><span style="display:inline-block;" class="" role="presentation"></span><span class="blocklyTreeLabel" id=":0.label"></span><span></span></div><div style="background-position: -100px 0px;" role="group"><div class="" id=":d8" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":d8.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":d8.label">變數</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":d9" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":d9.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":d9.label">流程</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":da" role="treeitem" aria-selected="false" aria-expanded="true" aria-level="1" aria-labelledby=":da.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconOpen" role="presentation"></span><span class="blocklyTreeLabel" id=":da.label">基本功能</span><span></span></div><div style="background-position: 0px 0px;" role="group"><div class="" id=":db" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="2" aria-labelledby=":db.label"><div class="blocklyTreeRow" style="padding-left: 19px; border-left: none;"><span role="presentation"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":db.label">邏輯</span><span></span></div><div style="background-position:19px 0;display:none;" role="group"></div></div><div class="" id=":dc" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="2" aria-labelledby=":dc.label"><div class="blocklyTreeRow" style="padding-left: 19px; border-left: none;"><span role="presentation"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":dc.label">迴圈</span><span></span></div><div style="background-position:19px 0;display:none;" role="group"></div></div><div class="" id=":dd" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="2" aria-labelledby=":dd.label"><div class="blocklyTreeRow" style="padding-left: 19px; border-left: none;"><span role="presentation"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":dd.label">數學式</span><span></span></div><div style="background-position:19px 0;display:none;" role="group"></div></div><div class="" id=":de" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="2" aria-labelledby=":de.label"><div class="blocklyTreeRow" style="padding-left: 19px; border-left: none;"><span role="presentation"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":de.label">文字</span><span></span></div><div style="background-position:19px 0;display:none;" role="group"></div></div><div class="" id=":df" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="2" aria-labelledby=":df.label"><div class="blocklyTreeRow" style="padding-left: 19px; border-left: none;"><span role="presentation"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":df.label">列表</span><span></span></div><div style="background-position:19px 0;display:none;" role="group"></div></div><div class="" id=":dg" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="2" aria-labelledby=":dg.label"><div class="blocklyTreeRow" style="padding-left: 19px; border-left: none;"><span role="presentation"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":dg.label">顏色</span><span></span></div><div style="background-position:19px 0;display:none;" role="group"></div></div><div id=":dh" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="2" aria-labelledby=":dh.label"><div class="blocklyTreeSeparator" style="border-left: none;"><span role="presentation"></span><span style="display:inline-block;" class="" role="presentation"></span><span id=":dh.label"></span><span></span></div><div style="background-position:-100px 0;display:none;" role="group"></div></div></div></div><div class="" id=":di" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":di.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconClosedLtr" role="presentation"></span><span class="blocklyTreeLabel" id=":di.label">進階功能</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div id=":ds" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":ds.label"><div class="blocklyTreeSeparator" style="border-left: none;"><span role="presentation" class="undefined undefined undefined"></span><span style="display:inline-block;" class="" role="presentation"></span><span id=":ds.label"></span><span></span></div><div style="background-position:-100px 0;display:none;" role="group"></div></div><div class="" id=":dt" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":dt.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":dt.label">開發板</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":du" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":du.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":du.label">I/O 腳位</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":dv" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":dv.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":dv.label">LED 燈</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":dw" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":dw.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":dw.label">三色 LED</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":dx" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":dx.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":dx.label">繼電器</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":dy" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":dy.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":dy.label">超音波</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":dz" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":dz.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":dz.label">伺服馬達</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":e0" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":e0.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":e0.label">全彩點矩陣</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":e1" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":e1.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":e1.label">按鈕開關</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":e2" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":e2.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":e2.label">蜂鳴器</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":e3" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":e3.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":e3.label">震動開關</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":e4" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":e4.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":e4.label">土壤濕度偵測</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":e5" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":e5.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":e5.label">溫濕度</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":e6" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":e6.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":e6.label">聲音偵測</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":e7" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":e7.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":e7.label">光敏感測器</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":e8" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":e8.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":e8.label">紅外線接收</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":e9" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":e9.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":e9.label">紅外線發射</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":ea" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":ea.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":ea.label">熱敏電阻</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div class="" id=":eb" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":eb.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation" class="blocklyTreeIcon undefined undefined"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":eb.label">九軸感測器</span><span></span></div><div style="background-position: 0px 0px; display: none;" role="group"></div></div><div id=":ec" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":ec.label"><div class="blocklyTreeSeparator" style="border-left: none;"><span role="presentation" class="undefined undefined undefined"></span><span style="display:inline-block;" class="" role="presentation"></span><span id=":ec.label"></span><span></span></div><div style="background-position:-100px 0;display:none;" role="group"></div></div><div class="" id=":ed" role="treeitem" aria-selected="false" aria-expanded="false" aria-level="1" aria-labelledby=":ed.label"><div class="blocklyTreeRow" style="padding-left: 0px; border-left: none;"><span role="presentation"></span><span style="display:inline-block;" class="blocklyTreeIcon blocklyTreeIconNone" role="presentation"></span><span class="blocklyTreeLabel" id=":ed.label">點擊燈泡</span><span></span></div><div style="background-position:-100px 0;display:none;" role="group"></div></div></div></div></div></body></html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Webduino Blockly Demo 02</title>
+  <script src="./jquery.min.js.下載"></script>
+  <script src="./webduino-all.min.js.下載"></script>
+  <script src="./MessageTransport.min.js.下載"></script>
+  <script src="./webduino-blockly.min.js.下載"></script>
+  <script src="./firebase.min.js.下載"></script>
+  <script src="./runtime.min.js.下載"></script><script src="./BitLedMatrix-blockly.js.下載"></script><script src="./BitLedMatrix.js.下載"></script>
+
+  <style>#demo-area-02-light img {
+  height: 200px;
+  display: none;
+  pointer-events: auto!important;
+}
+
+#demo-area-02-light.on #demo-area-02-on {
+  display: inline-block;
+  pointer-events: auto!important;
+}
+
+#demo-area-02-light.off #demo-area-02-off {
+  display: inline-block;
+  pointer-events: auto!important;
+}</style>
+</head>
+
+<body>
+  <div><div id="demo-area-02-light" class="on">
+    <img src="./off.jpg" id="demo-area-02-off">
+    <img src="./on.jpg" id="demo-area-02-on">
+  </div></div>
+
+  <script>var matrix;
+
+
+boardReady({board: 'Bit', device: '8NafA8TBRiwRfB4i4N', transport: 'mqtt'}, function (board) {
+  board.samplingInterval = 250;
+  matrix = getMatrix(board, 4, 25);
+  document.getElementById("demo-area-02-light").addEventListener("click", function(){
+    if (document.getElementById("demo-area-02-light").className == "on") {
+       document.getElementById("demo-area-02-light").className = "off";
+    } else {
+      document.getElementById("demo-area-02-light").className = "on";
+    }
+    if (document.getElementById("demo-area-02-light").className == "on") {
+      matrix.setColor('#ff0000');
+    }
+    if (document.getElementById("demo-area-02-light").className == "off") {
+      matrix.setColor('#cc33cc');
+    }
+  });
+});
+</script>
+
+
+</body></html>
